@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, DateTime, Text, func
 
-DSN = 'postgresql://postgres:Hun$917&305TpS@localhost:5432/DB'
+DSN = 'postgresql://postgres:postgres@localhost:5432/DB'
 engine = create_engine(DSN)
 atexit.register(engine.dispose)
 
